@@ -66,7 +66,7 @@ namespace Framework.UI
         {
             TextAsset textAsset = Resources.Load<TextAsset>(UIConst.CON_PATH_RESOURCE + UIConst.CON_PANELLIST);
 
-            List<PanelInfo> panelInfoList = JsonSerialize.Instance.Deserialize<PanelInfoList>(textAsset.text)?.PanelList;
+            List<PanelInfo> panelInfoList = JsonFactory.Json().Deserialize<PanelInfoList>(textAsset.text)?.PanelList;
 
             panelInfoList?.ForEach(panelInfo => {
 
@@ -94,7 +94,8 @@ namespace Framework.UI
 
                 //找到面板所在层级对象
                 Transform parent = uiRoot.transform.Find(panelInfo.Level.ToString());
-                
+
+                go.name = panelInfo.Name;
                 go.transform.SetParent(parent, false);
                 go.transform.localPosition = Vector3.zero;
                 go.transform.localRotation = Quaternion.identity;

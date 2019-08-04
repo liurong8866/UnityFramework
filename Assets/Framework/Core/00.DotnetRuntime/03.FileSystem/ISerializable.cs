@@ -6,7 +6,7 @@ namespace Framework
         /// <summary>
         /// 序列化
         /// </summary>
-        string Serialize(object obj);
+        string Serialize(object value);
 
         /// <summary>
         /// 反序列化

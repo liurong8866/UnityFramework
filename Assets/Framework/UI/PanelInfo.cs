@@ -3,26 +3,22 @@ namespace Framework.UI
 {
     [System.Serializable]
     public class PanelInfo
-    {
-        
+    {        
         //名称
-        public string Name;
+        public string Name { get; set; }
 
         //路径
-        public string Path;
+        public string Path { get; set; }
 
         //面板视图层级
-        public string Level;
-
-        //public PanelLevel Level;
+        public PanelLevel Level { get; set; }
 
         //显示模式
-        public string showModle;
-        //public PanelShowModle ShowModle;
+        public PanelShowModle ShowModle { get; set; }
 
         //穿透类型
-        public string lucenyType;
-        //public PanelLucenyType LucenyType;
+        public PanelLucenyType lucenyType { get; set; }
+
     }
 
     [System.Serializable]

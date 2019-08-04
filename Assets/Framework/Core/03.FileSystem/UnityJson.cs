@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace Framework
 {
-    public class JsonSerialize : Singleton<JsonSerialize>, ISerializable
+    public class UnityJson : Singleton<UnityJson>, ISerializable
     {
-        private JsonSerialize() { }
+        private UnityJson() { }
 
         /// <summary>
         /// 序列化
