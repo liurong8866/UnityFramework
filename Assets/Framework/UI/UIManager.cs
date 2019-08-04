@@ -28,53 +28,12 @@ namespace Framework.UI
             //初始化UIRoot，将他放置到场景中
             InitUIRoot();
 
-            //获取Panel信息列表
-            GetPanelList();
-
-
-
+            //初始化Panel信息列表
+            InitPanelList();
         }
         #endregion
 
         #region 方法函数
-
-        #endregion
-
-        #region 方法属性
-
-        #endregion
-
-        #region 私有方法
-
-        /// <summary>
-        /// 初始化UIRoot
-        /// </summary>
-        private void InitUIRoot()
-        {
-            uiRoot = GameObject.Instantiate(Resources.Load(UIConst.CON_PATH_RESOURCE + UIConst.CON_UIROOT)) as GameObject;
-
-            uiRoot.name = UIConst.CON_UIROOT;
-            uiRoot.transform.localPosition = Vector3.zero;
-            uiRoot.transform.localRotation = Quaternion.identity;
-            uiRoot.transform.localScale = Vector3.one;
-        }
-
-        /// <summary>
-        /// 获取Panel信息列表
-        /// </summary>
-        private void GetPanelList()
-        {
-            TextAsset textAsset = Resources.Load<TextAsset>(UIConst.CON_PATH_RESOURCE + UIConst.CON_PANELLIST);
-
-            List<PanelInfo> panelInfoList = JsonFactory.Json().Deserialize<PanelInfoList>(textAsset.text)?.PanelList;
-
-            panelInfoList?.ForEach(panelInfo => {
-
-                panelInfoDic.Add(panelInfo.Name, panelInfo);
-
-                panelInfo.Level.ToString().Log();
-            });
-        }
 
         /// <summary>
         /// 实例化Panel到场景
@@ -112,8 +71,37 @@ namespace Framework.UI
 
         #endregion
 
-        #region 析构函数
+        #region 初始化数据
+
+        /// <summary>
+        /// 初始化UIRoot
+        /// </summary>
+        private void InitUIRoot()
+        {
+            uiRoot = GameObject.Instantiate(Resources.Load(UIConst.CON_PATH_RESOURCE + UIConst.CON_UIROOT)) as GameObject;
+
+            uiRoot.name = UIConst.CON_UIROOT;
+            uiRoot.transform.localPosition = Vector3.zero;
+            uiRoot.transform.localRotation = Quaternion.identity;
+            uiRoot.transform.localScale = Vector3.one;
+
+            //切换场景不被回收
+            uiRoot.DontDestroyOnLoad();
+        }
+
+        /// <summary>
+        /// 初始化Panel信息列表
+        /// </summary>
+        private void InitPanelList()
+        {
+            TextAsset textAsset = Resources.Load<TextAsset>(UIConst.CON_PATH_RESOURCE + UIConst.CON_PANELLIST);
+
+            List<PanelInfo> panelInfoList = JsonFactory.Json().Deserialize<PanelInfoList>(textAsset.text)?.PanelList;
+
+            panelInfoList?.ForEach(panelInfo => {panelInfoDic.Add(panelInfo.Name, panelInfo);});
+        }
 
         #endregion
+
     }
 }

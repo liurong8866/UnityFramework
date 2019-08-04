@@ -101,7 +101,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 112913945033688621}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2095666955, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
@@ -495,7 +495,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3311686766304750947}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -515,6 +515,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &3311686766304750951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -524,7 +525,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3311686766304750947}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -630,7 +631,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3311686766431259447}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -650,6 +651,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &6715705316972427359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -659,7 +661,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3311686766431259447}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fcb588535f89b245ac75beb3226ac20, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f9448590854c734ab6371803c98fb0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!225 &6353577363485946743
