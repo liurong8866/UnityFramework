@@ -50,22 +50,27 @@ namespace Framework.UI
     /// <summary>
     /// 面板显示模式
     /// </summary>
-    public enum PanelShowModle
+    public enum PanelShowMode
     {
         /// <summary>
-        /// 普通, 同一层级叠加
+        /// 普通：可与多窗口并存
         /// </summary>
         Normal,
 
         /// <summary>
-        /// 切换, 按照相反方向切换过去 原路弹回来
+        /// 唯一：如果有其他同级别窗口，则隐藏其他窗口
         /// </summary>
-        Switch,
+        Alone,
 
         /// <summary>
-        /// 隐藏，覆盖掉其他窗口
+        /// 非模态：同级窗口最高层显示，不关心其他窗口，点击遮罩层，消失
         /// </summary>
-        HideOther
+        Modeless,
+
+        /// <summary>
+        /// 模态：同级窗口最高层显示，不关心其他窗口，例如：购买时的 确认框，遮罩层不可点击
+        /// </summary>
+        Modal
     }
     
     /// <summary>

@@ -5,15 +5,26 @@ namespace Framework.UI
     public abstract class BasePanel : MonoBehaviour, IPanel
     {
         //Panel基础信息
-        PanelInfo BaseInfo { get; set; }
+        public PanelInfo PanelInfo { get; set; }
+        
+        public virtual void Enter()
+        {
 
+        }
 
-        public abstract void Enter();
+        public virtual void Exit()
+        {
 
-        public abstract void Exit();
+        }
 
-        public abstract void Pause();
+        public virtual void Pause()
+        {
 
-        public abstract void Resume();
+        }
+
+        public virtual void Resume()
+        {
+
+        }
     }
 }
