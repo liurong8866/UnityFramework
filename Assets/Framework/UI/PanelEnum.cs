@@ -9,42 +9,42 @@ namespace Framework.UI
         /// <summary>
         /// 背景层,菜单背景
         /// </summary>
-        BackgroundPanel = 0,
+        Background = 0,
 
         /// <summary>
         /// 默认层，通常放置此处即可
         /// </summary>
-        DefaultPanel = 1,
+        Normal = 1,
 
         /// <summary>
         /// 持续存在层 如：图标
         /// </summary>
-        FixedPanel = 2,
+        Fixed = 2,
 
         /// <summary>
         /// 弹出层,物品栏弹窗等
         /// </summary>
-        PopupPanel = 3,
+        Popup = 3,
 
         /// <summary>
         /// 对话框层，人物对话弹窗等
         /// </summary>
-        ToastPanel = 4,
+        Toast = 4,
 
         /// <summary>
         /// 信息预览层，如：装备介绍
         /// </summary>
-        InfoPanel = 5,
+        Information = 5,
 
         /// <summary>
         /// 新手引导层
         /// </summary>
-        GuidePanel = 6,
+        Guide = 6,
 
         /// <summary>
         /// 最高层
         /// </summary>
-        ForwardPanel = 7
+        Forward = 7
     }
 
     /// <summary>

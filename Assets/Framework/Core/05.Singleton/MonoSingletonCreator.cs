@@ -17,7 +17,7 @@ namespace Framework
             instance = UnityEngine.Object.FindObjectOfType<T>();
             if (instance != null)
             {
-                instance.OnInit();
+                instance.OnSingletonInit();
                 return instance;
             }
 
@@ -43,7 +43,7 @@ namespace Framework
                 instance = obj.AddComponent<T>();
             }
 
-            instance.OnInit();
+            instance.OnSingletonInit();
             return instance;
         }
 

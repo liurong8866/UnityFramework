@@ -25,7 +25,7 @@ namespace Framework
             SingletonProperty<SafePool<T>>.Dispose();
         }
 
-        public void OnInit() { }
+        public void OnSingletonInit() { }
 
         #endregion
 

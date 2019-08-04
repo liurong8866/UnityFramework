@@ -11,7 +11,7 @@ namespace Framework
             //通过反射创建实例化对象。 
             T instance = ReflectorUtility.CreateInstance<T>(BindingFlags.Instance | BindingFlags.NonPublic, null);
 
-            instance.OnInit();
+            instance.OnSingletonInit();
 
             return instance;
         }

@@ -7,6 +7,6 @@ namespace Framework
     public interface ISingleton
     {
         //当单例模式初始化时调用
-        void OnInit();
+        void OnSingletonInit();
     }
 }

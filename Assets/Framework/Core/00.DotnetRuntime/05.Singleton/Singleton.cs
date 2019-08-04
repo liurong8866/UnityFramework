@@ -40,7 +40,7 @@ namespace Framework
         }
 
         //当单例模式初始化时调用
-        public virtual void OnInit() { }
+        public virtual void OnSingletonInit() { }
 
         //销毁对象
         public virtual void Dispose()

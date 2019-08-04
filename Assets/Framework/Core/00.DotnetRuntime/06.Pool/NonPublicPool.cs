@@ -21,7 +21,7 @@ namespace Framework
             SingletonProperty<NonPublicPool<T>>.Dispose();
         }
 
-        public void OnInit() { }
+        public void OnSingletonInit() { }
 
         #endregion
 

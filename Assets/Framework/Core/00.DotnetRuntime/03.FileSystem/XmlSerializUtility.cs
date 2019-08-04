@@ -4,7 +4,7 @@ using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace Framework.IO
+namespace Framework
 {
     public class XmlSerializUtility<T>
     {

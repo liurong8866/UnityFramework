@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Framework
 {
@@ -158,5 +159,24 @@ namespace Framework
         }
 
         #endregion
+
+        //根据Key获取Value
+        public static TValue Value<TKey, TValue>(this Dictionary<TKey, TValue> dictionary, TKey key)
+        {
+            TValue value = default(TValue);
+
+            dictionary.TryGetValue(key, out value);
+
+            return value;
+        }
+
+        /// <summary>
+        /// 字符串、数值类型转枚举类型
+        /// </summary>
+        public static T ToEnum<T>(this T value) where T: struct
+        {
+            return (T)System.Enum.Parse(typeof(T), value.ToString());
+        }
+        
     }
 }

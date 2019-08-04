@@ -4,7 +4,7 @@ using System.Collections;
 using System.IO;
 using System.IO.Compression;
 
-namespace Framework.IO
+namespace Framework
 {
     //Stream // 对字节的读写操作(包含对异步操作的支持) Reading Writing Seeking
 

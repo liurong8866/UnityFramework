@@ -154,6 +154,14 @@ namespace Framework
 
             return result;
         }
+        
+        /// <summary>
+        /// 字符串、数值类型转枚举类型
+        /// </summary>
+        public static T ToEnum<T>(this string value)
+        {
+            return (T)System.Enum.Parse(typeof(T), value);
+        }
 
         /// <summary>
         /// 分割字符串
@@ -170,14 +178,6 @@ namespace Framework
             return result;
         }
         
-        /// <summary>
-        /// 字符串转枚举类型
-        /// </summary>
-        public static T ToEnum<T>(this string value)
-        {
-            return (T)System.Enum.Parse(typeof(T), value);
-        }
-
         /// <summary>
         /// 取得骆驼命名方式，首字母小写
         /// </summary>

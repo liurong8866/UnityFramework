@@ -1,0 +1,54 @@
+{
+
+    "PanelList": [
+        {
+            "Name": "TaskPanel",
+            "Path": "UIPanel/TaskPanel",
+            "Level": "Popup",
+            "ShowModle": "Normal",
+            "LucenyType": "Pentrate"
+        },
+        {
+            "Name": "InventoryPanel",
+            "Path": "UIPanel/InventoryPanel",
+            "Level": "Popup",
+            "ShowModle": "Normal",
+            "LucenyType": "Pentrate"
+        },
+        {
+            "Name": "ItemInfoPanel",
+            "Path": "UIPanel/ItemInfoPanel",
+            "Level": "Information",
+            "ShowModle": "Normal",
+            "LucenyType": "Pentrate"
+        },
+        {
+            "Name": "MainMenuPanel",
+            "Path": "UIPanel/MainMenuPanel",
+            "Level": "Popup",
+            "ShowModle": "Normal",
+            "LucenyType": "Pentrate"
+        },
+        {
+            "Name": "ShopPanel",
+            "Path": "UIPanel/ShopPanel",
+            "Level": "Popup",
+            "ShowModle": "Normal",
+            "LucenyType": "Pentrate"
+        },
+        {
+            "Name": "SkillPanel",
+            "Path": "UIPanel/SkillPanel",
+            "Level": "Popup",
+            "ShowModle": "Normal",
+            "LucenyType": "Pentrate"
+        },
+        {
+            "Name": "SystemPanel",
+            "Path": "UIPanel/SystemPanel",
+            "Level": "Forward",
+            "ShowModle": "HideOther",
+            "LucenyType": "ImPenetrable"
+        }
+    ]
+}
