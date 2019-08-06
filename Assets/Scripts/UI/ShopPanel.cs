@@ -2,8 +2,11 @@
 
 namespace Framework.UI
 {
-    public class ShopPanel : BasePanel
+    public class ShopPanel : FadePanel
     {
-
+        protected override void Start()
+        {
+            base.Start();
+        }
     }
 }

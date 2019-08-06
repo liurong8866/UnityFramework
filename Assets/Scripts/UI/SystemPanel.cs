@@ -2,8 +2,11 @@
 
 namespace Framework.UI
 {
-    public class SystemPanel : BasePanel
+    public class SystemPanel : FadePanel
     {
-
+        protected override void Start()
+        {
+            base.Start();
+        }
     }
 }

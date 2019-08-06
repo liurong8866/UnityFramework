@@ -25,7 +25,7 @@
         {
             "Name": "MainMenuPanel",
             "Path": "UIPanel/MainMenuPanel",
-            "Level": "Popup",
+            "Level": "Background",
             "ShowModle": "Normal",
             "LucenyType": "Pentrate"
         },
@@ -47,7 +47,7 @@
             "Name": "SystemPanel",
             "Path": "UIPanel/SystemPanel",
             "Level": "Forward",
-            "ShowModle": "HideOther",
+            "ShowModle": "Modal",
             "LucenyType": "ImPenetrable"
         }
     ]

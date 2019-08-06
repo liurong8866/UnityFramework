@@ -8,13 +8,13 @@ namespace Framework
     public delegate void OnEvent(int key, params object[] param);
 
 
-    public class EventSystem : Singleton<EventSystem>, IPoolable
+    public class EventMonitor : Singleton<EventMonitor>, IPoolable
     {
         private readonly Dictionary<int, ListenerMap> listenerMap = new Dictionary<int, ListenerMap>(50);
 
         public bool IsRecycled { get; set; }
 
-        private EventSystem() { }
+        private EventMonitor() { }
 
         #region 功能函数
 

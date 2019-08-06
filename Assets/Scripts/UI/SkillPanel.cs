@@ -4,8 +4,11 @@ using UnityEngine;
 
 namespace Framework.UI
 {
-    public class SkillPanel : BasePanel
+    public class SkillPanel : FadePanel
     {
-
+        protected override void Start()
+        {
+            base.Start();
+        }
     }
 }

@@ -169,7 +169,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -99.5, y: 6.9}
+  m_AnchoredPosition: {x: -172.79999, y: 6.9}
   m_SizeDelta: {x: 48, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1333990363917883687
@@ -302,7 +302,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 51.8, y: 6.9}
+  m_AnchoredPosition: {x: -21.499989, y: 6.9}
   m_SizeDelta: {x: 48, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1333990363958701699
@@ -663,7 +663,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -24.000015, y: 6.9}
+  m_AnchoredPosition: {x: -97.3, y: 6.9}
   m_SizeDelta: {x: 48, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1333990364771247980
@@ -1165,7 +1165,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -171.4, y: 6.9}
+  m_AnchoredPosition: {x: -244.69998, y: 6.9}
   m_SizeDelta: {x: 48, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5144866883513157449
@@ -1353,6 +1353,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a7cd924b1d494d49b97a58bfea14fc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  taskButton: {fileID: 5144866883513157492}
+  inventoryButton: {fileID: 1333990363917883674}
+  battleButton: {fileID: 1333990364771247953}
+  skillButton: {fileID: 1333990363958701758}
+  shopButton: {fileID: 1333990363841940824}
+  systemButton: {fileID: 1333990364189321202}
 --- !u!225 &963703267610913442
 CanvasGroup:
   m_ObjectHideFlags: 0

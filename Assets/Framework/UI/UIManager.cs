@@ -43,7 +43,7 @@ namespace Framework.UI
         /// <summary>
         /// 显示面板,同时放入栈内
         /// </summary>
-        public void ShowPanel(string panelName)
+        public void OpenPanel(string panelName)
         {
             //实例化面板
             BasePanel panel = InstancePanel(panelName);
@@ -63,7 +63,7 @@ namespace Framework.UI
         /// <summary>
         /// 隐藏面板
         /// </summary>
-        public void HidePanel()
+        public void ClosePanel()
         {
             if (panelStack.Count > 0)
             {
@@ -87,7 +87,7 @@ namespace Framework.UI
         /// </summary>
         private void InitUIRoot()
         {
-            uiRoot = GameObject.Instantiate(Resources.Load(UIConst.CON_PATH_RESOURCE + UIConst.CON_UIROOT)) as GameObject;
+            uiRoot = GameObject.Instantiate(Resources.Load(UIConst.CON_UIRESOURCE + UIConst.CON_UIROOT)) as GameObject;
 
             uiRoot.name = UIConst.CON_UIROOT;
             uiRoot.transform.localPosition = Vector3.zero;
@@ -103,7 +103,7 @@ namespace Framework.UI
         /// </summary>
         private void InitPanelList()
         {
-            TextAsset textAsset = Resources.Load<TextAsset>(UIConst.CON_PATH_RESOURCE + UIConst.CON_PANELLIST);
+            TextAsset textAsset = Resources.Load<TextAsset>(UIConst.CON_UIRESOURCE + UIConst.CON_PANELLIST);
 
             List<PanelInfo> panelInfoList = JsonFactory.Json().Deserialize<PanelInfoList>(textAsset.text)?.PanelList;
 

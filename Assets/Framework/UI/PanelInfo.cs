@@ -21,8 +21,9 @@ namespace Framework.UI
         //穿透类型
         public PanelLucenyType LucenyType { get; set; }
 
-        //朋友，如果该窗口打开，则同时打开朋友窗口
-        public List<PanelInfo> Friends { get; set; }
+        //共同工作窗口，如果该窗口打开，则同时打开窗口
+        [Newtonsoft.Json.JsonIgnore]
+        public List<string> TeamPanel { get; set; }
 
     }
 

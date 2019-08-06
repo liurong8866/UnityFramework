@@ -6,7 +6,7 @@ namespace Framework.UI
     {
         private void Start()
         {
-            UIManager.Instance.ShowPanel("TaskPanel") ;
+            UIManager.Instance.OpenPanel("MainMenuPanel") ;
         }
     }
 }
