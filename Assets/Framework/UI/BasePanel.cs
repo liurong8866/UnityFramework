@@ -24,4 +24,5 @@ namespace Framework.UI
         public virtual void Exit() { }
         
     }
+
 }

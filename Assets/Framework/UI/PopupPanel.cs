@@ -6,7 +6,7 @@ namespace Framework.UI
     /// <summary>
     /// 淡入、淡出模式
     /// </summary>
-    public class FadePanel : BasePanel, IClosable
+    public class PopupPanel : DragablePanel, IClosable
     {
         protected CanvasGroup canvasGroup;
 
@@ -44,7 +44,13 @@ namespace Framework.UI
             canvasGroup.alpha = 0;
             canvasGroup.blocksRaycasts = false;
         }
-                
+
+        //实现IClosable
+        public virtual void OnClose(BaseEventData data)
+        {
+            UIManager.Instance.ClosePanel();
+        }
+
         //初始化组件
         private void InitComponent()
         {
@@ -57,25 +63,27 @@ namespace Framework.UI
 
             canvasGroup.alpha = 1;
             canvasGroup.blocksRaycasts = true;
+
         }
-        
+
         //注册事件
         private void RegisterEvent()
         {
             //CloseButton 注册事件
-            Transform closeButton = transform.Find(UIConst.CON_BUTTON_CLOSE);
+            Transform closeButton = transform.Find(this.CloseButtonPath);
 
             if (closeButton.IsNullOrEmpty())
             {
-                throw new System.Exception("没有找到关闭按钮：" + UIConst.CON_BUTTON_CLOSE);
+                throw new System.Exception("没有找到关闭按钮：" + this.CloseButtonPath);
             }
 
             UIEvent.Instance.BindEvent(closeButton.gameObject, EventTriggerType.PointerClick, OnClose);
         }
 
-        public virtual void OnClose(BaseEventData data)
+        protected virtual string CloseButtonPath
         {
-            UIManager.Instance.ClosePanel();
+            get { return UIConst.CON_BUTTON_CLOSE; }
         }
+
     }
 }

@@ -1,10 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Framework.UI
+﻿namespace Framework.UI
 {
-    public class SkillPanel : FadePanel
+    public class SkillPanel : PopupPanel
     {
         protected override void Start()
         {

@@ -21,6 +21,9 @@ namespace Framework.UI
         //穿透类型
         public PanelLucenyType LucenyType { get; set; }
 
+        //面板交互（动画）
+        public PanelInteraction Interaction { get; set; }
+        
         //共同工作窗口，如果该窗口打开，则同时打开窗口
         [Newtonsoft.Json.JsonIgnore]
         public List<string> TeamPanel { get; set; }

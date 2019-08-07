@@ -11,7 +11,7 @@ public class UIConst
     public static readonly string CON_PANELLIST = "PanelList";
 
     //关闭按钮名称
-    public static readonly string CON_BUTTON_CLOSE = "CloseButton";
+    public static readonly string CON_BUTTON_CLOSE = "Title/CloseButton";
 
 
 }

@@ -98,4 +98,43 @@ namespace Framework.UI
         /// </summary>
         Pentrate
     }
+
+    /// <summary>
+    /// 面板交互
+    /// </summary>
+    public enum PanelInteraction
+    {   
+        /// <summary>
+        /// 无效果
+        /// </summary>
+        None,
+
+        /// <summary>
+        /// 淡入
+        /// </summary>
+        Fade,
+
+        /// <summary>
+        /// 左移入
+        /// </summary>
+        FromLeft,
+
+        /// <summary>
+        /// 右移入
+        /// </summary>
+        FromRight,
+
+        /// <summary>
+        /// 上移入
+        /// </summary>
+        FromTop,
+
+        /// <summary>
+        /// 下移入
+        /// </summary>
+        FromBottom
+
+    }
 }
+
+

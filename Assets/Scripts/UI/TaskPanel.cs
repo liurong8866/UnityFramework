@@ -1,9 +1,6 @@
-﻿using UnityEngine;
-using UnityEngine.EventSystems;
-
-namespace Framework.UI
+﻿namespace Framework.UI
 {
-    public class TaskPanel : FadePanel
+    public class TaskPanel : PopupPanel
     {
         protected override void Start()
         {

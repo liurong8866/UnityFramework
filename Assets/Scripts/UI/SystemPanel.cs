@@ -1,8 +1,6 @@
-﻿using UnityEngine;
-
-namespace Framework.UI
+﻿namespace Framework.UI
 {
-    public class SystemPanel : FadePanel
+    public class SystemPanel : PopupPanel
     {
         protected override void Start()
         {

@@ -1,9 +1,6 @@
-﻿using UnityEngine;
-using UnityEngine.EventSystems;
-
-namespace Framework.UI
+﻿namespace Framework.UI
 {
-    public class InventoryPanel : FadePanel
+    public class InventoryPanel : PopupPanel
     {
         protected override void Start()
         {
