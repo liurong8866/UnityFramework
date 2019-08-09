@@ -1,13 +1,13 @@
 ﻿namespace Framework.UI
 {
     public class InventoryPanel : PopupPanel
-    {
-        protected override void Start()
+    {        
+        //进入
+        public override void Enter()
         {
-            base.Start();
-
+            canvasGroup.alpha = 1;
+            canvasGroup.blocksRaycasts = true;
         }
-        
     }
 }
 

@@ -12,10 +12,8 @@ namespace Framework.UI
         public GameObject shopButton;
         public GameObject systemButton;
 
-        protected override void Start()
+        void Start()
         {
-            base.Start();
-
             UIEvent.Instance.BindEvent(taskButton, EventTriggerType.PointerClick, OnTaskClick);
             UIEvent.Instance.BindEvent(inventoryButton, EventTriggerType.PointerClick, OnInventoryClick);
             UIEvent.Instance.BindEvent(battleButton, EventTriggerType.PointerClick, OnBattleClick);
@@ -26,12 +24,12 @@ namespace Framework.UI
 
         public void OnTaskClick(BaseEventData data)
         {
-            UIManager.Instance.OpenPanel("TaskPanel");
+            PanelManager.Instance.OpenPanel("TaskPanel");
         }
 
         public void OnInventoryClick(BaseEventData data)
         {
-            UIManager.Instance.OpenPanel("InventoryPanel");
+            PanelManager.Instance.OpenPanel("InventoryPanel");
         }
 
         public void OnBattleClick(BaseEventData data)
@@ -41,17 +39,17 @@ namespace Framework.UI
 
         public void OnSkillClick(BaseEventData data)
         {
-            UIManager.Instance.OpenPanel("SkillPanel");
+            PanelManager.Instance.OpenPanel("SkillPanel");
         }
 
         public void OnShopClick(BaseEventData data)
         {
-            UIManager.Instance.OpenPanel("ShopPanel");
+            PanelManager.Instance.OpenPanel("ShopPanel");
         }
 
         public void OnSystemClick(BaseEventData data)
         {
-            UIManager.Instance.OpenPanel("SystemPanel");
+            PanelManager.Instance.OpenPanel("SystemPanel");
         }
     }
 }
