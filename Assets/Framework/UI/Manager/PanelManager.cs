@@ -50,16 +50,37 @@ namespace Framework.UI
             
             panel.Enter();
 
-            //栈首界面暂停
-            if (panelStack.Count > 0)
-            {
-                panelStack.Peek().Pause();
-            }
+            //switch(panel.PanelInfo.ShowModle)
+            //{
 
-            //放入栈
-            panelStack.Push(panel);
+            //    //普通：可与多窗口并存
+            //    case PanelShowMode.Normal:
 
+            //        ////栈首界面暂停
+            //        //if (panelStack.Count > 0)
+            //        //{
+            //        //    panelStack.Peek().Pause();
+            //        //}
 
+            //        ////放入栈
+            //        //panelStack.Push(panel);
+
+            //        break;
+
+            //    //唯一：如果有其他同级别窗口，则隐藏其他窗口
+            //    case PanelShowMode.Alone:
+                    
+            //        break;
+
+            //    //非模态：同级窗口最高层显示，不关心其他窗口，点击遮罩层，消失
+            //    case PanelShowMode.Modeless:
+            //        //MaskPanel.Instance.Init(panel.transform, PanelLucenyType.Lucency);
+            //        break;
+
+            //    //模态：同级窗口最高层显示，不关心其他窗口，例如：购买时的 确认框，遮罩层不可点击
+            //    case PanelShowMode.Modal:
+            //        break;
+            //}
         }
 
         /// <summary>
@@ -133,10 +154,13 @@ namespace Framework.UI
                 Transform parent = uiRoot.transform.Find(panelInfo.Level.ToString());
 
                 go.name = panelInfo.Name;
+
                 go.transform.SetParent(parent, false);
-                go.transform.localPosition = Vector3.zero;
-                go.transform.localRotation = Quaternion.identity;
-                go.transform.localScale = Vector3.one;
+
+                //从配置中获取
+                //go.transform.localPosition = Vector3.zero;
+                //go.transform.localRotation = Quaternion.identity;
+                //go.transform.localScale = Vector3.one;
 
                 basePanel = go.GetComponent<BasePanel>();
 

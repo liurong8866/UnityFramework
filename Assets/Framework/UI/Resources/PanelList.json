@@ -5,7 +5,7 @@
             "Name": "TaskPanel",
             "Path": "UIPanel/TaskPanel",
             "Level": "Popup",
-            "ShowModle": "Normal",
+            "ShowModle": "Modeless",
             "LucenyType": "Pentrate"
 
         },

@@ -2,7 +2,7 @@
 namespace Framework.UI
 {
     /// <summary>
-    /// 面板显示级别
+    /// 面板显示级别，程序根据此项决定放在UIRoot的哪一层中
     /// </summary>
     public enum PanelLevel
     {
@@ -79,7 +79,7 @@ namespace Framework.UI
     public enum PanelLucenyType
     {
         /// <summary>
-        /// 完全透明，不能穿透
+        /// 透明，不能穿透
         /// </summary>
         Lucency,
 
@@ -94,7 +94,7 @@ namespace Framework.UI
         ImPenetrable,
 
         /// <summary>
-        /// 透明可以穿透
+        /// 透明，可以穿透
         /// </summary>
         Pentrate
     }

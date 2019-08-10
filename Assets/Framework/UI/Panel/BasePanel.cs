@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
-using UnityEngine.EventSystems;
 
 namespace Framework.UI
 {
-    public abstract class BasePanel : MonoBehaviour // MonoSingleton<BasePanel>
+    /// <summary>
+    /// 所有UI面板的基类
+    /// </summary>
+    public abstract class BasePanel : MonoBehaviour
     {
         //面板信息
         public PanelInfo PanelInfo { get; set; }

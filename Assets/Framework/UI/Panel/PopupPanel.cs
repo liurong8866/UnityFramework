@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 namespace Framework.UI
 {
     /// <summary>
-    /// 淡入、淡出模式
+    /// 弹出窗
     /// </summary>
     public class PopupPanel : DragablePanel, IClosable
     {
@@ -45,13 +45,7 @@ namespace Framework.UI
             canvasGroup.alpha = 0;
             canvasGroup.blocksRaycasts = false;
         }
-
-        //实现IClosable
-        public virtual void OnClose(BaseEventData data)
-        {
-            PanelManager.Instance.ClosePanel();
-        }
-
+        
         //初始化组件
         private void InitComponent()
         {
@@ -79,6 +73,12 @@ namespace Framework.UI
             }
 
             UIEvent.Instance.BindEvent(closeButton.gameObject, EventTriggerType.PointerClick, OnClose);
+        }
+
+        //实现IClosable
+        public virtual void OnClose(BaseEventData data)
+        {
+            this.Exit();
         }
 
         protected virtual string CloseButtonPath
